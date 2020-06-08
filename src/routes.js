@@ -3,12 +3,14 @@ import { Switch, Route } from 'react-router-dom'
 
 import Home from './pages/Home'
 import Cart from './pages/Cart'
+import testhooks from './pages/TestHooks'
 
 export default function Routes() {
   return (
     <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/Cart" component={Cart} />
+      <Route path="/testhooks" exact component={testhooks} />
     </Switch>
   )
 }
